@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 6</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        table,tr,td{
+            background-color: red;
+            border: 1px solid black;
+        }
+        #btn{
+            margin: 0 0 0 15%;
+        }
+        label{
+            font-weight: 900;
+        }
+    </style>
+    <script>
+        function Power(num, num1){
+           power=num**num1
+            document.getElementById("result").innerHTML=power
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>Enter Base Number:</label></td>
+                <td><input type="number" name="num"></td>
+            </tr>
+                <tr>    
+                <td><label>Enter Exponent Number:</label></td>
+                <td><input type="number" name="num1"></td>
+            </tr>
+            <tr>
+                <td><input id="btn" type="button" value="Power" onclick="Power(num.value, num1.value)"/></td>
+                <td style="background-color: white;"><label id="result"></label></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

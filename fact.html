@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 6</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        table,tr,td{
+            background-color: red;
+            border: 1px solid black;
+        }
+        #btn{
+            margin: 0 0 0 15%;
+        }
+    </style>
+    <script>
+        function factorial(num){
+            var fact=1;
+            for(i=1;i<=num;i++){
+                fact *= i;
+            }
+            // document.write("Factorial is: "+fact)
+            // alert("Factorial is: "+fact);
+            document.getElementById("result").innerHTML=fact
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>Enter number:</label></td>
+                <td><input type="number" name="num"></td>
+            </tr>
+            <tr>
+                <td><input id="btn" type="button" value="Factorial" onclick="factorial(num.value)"/></td>
+                <td style="background-color: white;"><label id="result"></label></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

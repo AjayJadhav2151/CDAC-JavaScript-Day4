@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 5</title>
+    <script>
+        function prime(num) {
+            var flag = true;
+            if (num < 2) {
+                flag = false;
+            }
+            for (let i = 2; i < num; i++) { 
+                if (num % i == 0) {
+                    flag = false;
+                }
+            }
+            if(flag)
+            document.write(num + " is prime");
+            else 
+            document.write(num + " is Not prime");
+        }
+    </script>
+</head>
+<body>
+    <script>
+        prime(13);
+    </script>
+</body>
+</html>

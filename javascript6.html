@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 6</title>
+    <style>
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+    </style>
+    <script>
+        function factorial(num){
+            var fact=1;
+            for(i=1;i<=num;i++){
+                fact *= i;
+            }
+            // document.write("Factorial is: "+fact)
+            // alert("Factorial is: "+fact);
+            document.getElementById("result").innerHTML="Factorial is: "+fact
+        }
+    </script>
+</head>
+<body>
+    <button onclick="factorial(5)">check Factorial</button>
+    <div id="result">Answer</div>
+</body>
+</html>
